@@ -1,0 +1,10 @@
+
+This Repo holds the changes that were suggested in https://github.com/containers/skopeo/issues/1601[this issue] and will do the following
+
+take as envvar the:
+- DIGEST: the docker image digest
+- IMAGE_PREFIX: the prefix to search the image on (so we don't search all of the images
+- IMAGE_NAME: the image name that we will query
+
+TODO:
+- make the check take the whole `FROM` Dockerfile line and parse the DIGEST && IMAGE_NAME from it.
